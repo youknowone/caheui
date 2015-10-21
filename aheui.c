@@ -265,7 +265,7 @@ int execute(int *exitcode) {
             case OP_INPUT_NUM:
                 if (!quiet_mode)
                     fprintf(stderr, "Input number: ");
-                scanf("%d", &a);
+                scanf("%d ", &a);
                 push(a);
             break;
             case OP_INPUT_CHAR:
